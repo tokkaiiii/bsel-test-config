@@ -7,7 +7,7 @@ spring:
   cloud:
     gateway:
       default-filters:
-        - name: 
+        - name: GlobalFilter
           args:
             baseMessage: Test
             preLogger: true

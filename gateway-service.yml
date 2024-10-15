@@ -7,6 +7,12 @@ spring:
   cloud:
     gateway:
       routes:
+          - id: step1-service
+            uri: lb://STEP1-SERVICE
+            predicates:
+              - Path=/step1-service/**
+            # filters:
+
 eureka:
   client:
     register-with-eureka: true

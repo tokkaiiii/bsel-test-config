@@ -7,7 +7,12 @@ spring:
   cloud:
     gateway:
       default-filters:
-        - name: GlobalFilter
+        - name: 
+          args:
+            baseMessage: Test
+            preLogger: true
+            postLogger: true
+
       routes:
           - id: step1-service
             uri: lb://STEP1-SERVICE

@@ -12,7 +12,7 @@ management:
         include: refresh, health, beans, busrefresh
 
 token:
-  secret: mysecretkey2
+  secret: mysecretkey수정
   expiration: 3600000
 
 springdoc:

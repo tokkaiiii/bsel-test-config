@@ -10,3 +10,13 @@ management:
     web:
       exposure:
         include: refresh, health, beans, busrefresh
+
+token:
+  secret: mysecretkey
+  expiration: 3600000
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true

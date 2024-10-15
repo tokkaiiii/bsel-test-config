@@ -6,6 +6,8 @@ spring:
     password: guest
   cloud:
     gateway:
+      default-filters:
+        - name: GlobalFilter
       routes:
           - id: step1-service
             uri: lb://STEP1-SERVICE

@@ -19,10 +19,10 @@ spring:
             predicates:
               - Path=/step1-service/**
             # filters:
-          - id: step2-service22
-            uri: lb://STEP2-SERVICE
-            predicates:
-              - Path=/step2-service/**
+          # - id: step2-service22
+          #   uri: lb://STEP2-SERVICE
+          #   predicates:
+          #     - Path=/step2-service/**
 
 eureka:
   client:
